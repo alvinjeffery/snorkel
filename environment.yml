@@ -1,0 +1,49 @@
+name: snorkel_med
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  - aiohttp>=3.4.4
+  - async-timeout>=3.0.1
+  - beautifulsoup4
+  - future
+  - graphviz
+  - ipywidgets>=7.0
+  - jupyter
+  - lxml
+  - matplotlib
+  - nltk
+  - numba
+  - numpy>=1.16
+  - pandas
+  - pip>=19.1
+  - psycopg2
+  - py4j
+  - python=3.6.5
+  - python-graphviz
+  - pytorch-cpu>=0.4
+  - requests
+  - runipy
+  - scikit-learn
+  - scipy
+  - seaborn
+  - six
+  - spacy<2
+  - sqlalchemy>=1.0.14
+  - sqlite
+  - tensorflow=2.0.0
+  - tika
+  - tqdm
+  - urllib3
+  - pip:
+ #   - git+https://github.com/HazyResearch/numbskull@master
+ #   - git+https://github.com/HazyResearch/treedlib@master
+    - snorkel
+    - python-Levenshtein>=0.12.0
+	- pymatch>=0.3.4
+prefix: /anaconda3/envs/snorkel_med
+
+# following environment creation, run...
+# pip install snorkel_source/
